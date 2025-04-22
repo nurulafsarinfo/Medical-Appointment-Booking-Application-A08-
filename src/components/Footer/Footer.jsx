@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../assets/logo.png'
 import { NavLink } from 'react-router';
 import { FaFacebook, FaYoutube } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa6';
+import { FaGithub, FaTwitter, FaXTwitter} from 'react-icons/fa6';
 
 
 const Footer = () => {
@@ -23,6 +23,7 @@ const Footer = () => {
                 <a href="https://www.facebook.com/md.nurul.afsar.873095"><FaFacebook size={30} className="text-blue-400"></FaFacebook></a>
                 <a href="https://youtube.com"><FaYoutube size={30} className="text-red-500"></FaYoutube></a>
                 <a href="https://github.com/nurulafsarinfo/"><FaGithub size={30}></FaGithub></a>
+                <a href="https://github.com/nurulafsarinfo/"><FaXTwitter size={30}></FaXTwitter></a>
             </div>
 
         </div>

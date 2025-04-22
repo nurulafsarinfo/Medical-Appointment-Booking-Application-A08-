@@ -4,8 +4,8 @@ import { NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
-        <div className='bg-white'>
-            <div className="navbar  shadow-sm w-11/12 m-auto bg-white text-black">
+        <div className='bg-gray-100'>
+            <div className="navbar  shadow-sm w-11/12 m-auto bg-gray-100 text-black">
                 <div className="navbar-start">
                     <img className='w-10' src={logo} alt="" />
                     <a className="ml-2 text-xl font-bold">DocTalk</a>
