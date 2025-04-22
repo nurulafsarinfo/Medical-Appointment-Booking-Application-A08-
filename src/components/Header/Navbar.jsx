@@ -16,9 +16,6 @@ const Navbar = () => {
                         <NavLink to='/home' className='font-semibold'>Home2</NavLink>
                         <NavLink to='/home' className='font-semibold'>Home3</NavLink>
                         <NavLink to='/home' className='font-semibold'>Home4</NavLink>
-                        <NavLink to='/home' className='font-semibold'>Home4</NavLink>
-                       
-                      
                     </ul>
                 </div>
                 <div className="navbar-end">
