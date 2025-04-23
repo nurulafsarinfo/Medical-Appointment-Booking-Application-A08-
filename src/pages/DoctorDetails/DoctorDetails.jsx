@@ -7,8 +7,9 @@ import { addToBookList } from '../../components/Utilities/_bookList';
 
 
 
-const handleStoredData = (id) =>{
-    addToBookList(id);
+const handleStoredData = (docInfo) => {
+    addToBookList(docInfo);
+
 }
 
 
@@ -20,7 +21,7 @@ const DoctorDetails = () => {
     const doctorData = useLoaderData();
     const docInfo = doctorData.find(doctr => doctr.id === docId);
 
-    const {id, name, image, availability, registration_number, workplace, education, fee } = docInfo;
+    const { name, image, availability, registration_number, workplace, education, fee } = docInfo;
 
 
     return (
@@ -61,9 +62,10 @@ const DoctorDetails = () => {
                 </div>
                 <p className='text-amber-500 flex items-center my-5'> <PiWarningOctagonThin size={35} /> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
             </div>
-            <Link to={`/my-booking-data`}>
-                <button onClick={() => handleStoredData(id)} className='text-xl font-semibold bg-blue-600 rounded-full text-white py-1 w-full mb-4'>Book Appointment Now</button>
+            <Link to={'/my-booking-data'}>
+                <button onClick={() => handleStoredData(docInfo)} className='text-xl font-semibold bg-blue-600 rounded-full text-white py-1 w-full mb-4'>Book Appointment Now</button>
             </Link>
+
         </div>
     );
 };
