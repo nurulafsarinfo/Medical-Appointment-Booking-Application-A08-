@@ -6,7 +6,6 @@ import Doctors from '../../components/Doctors/Doctors';
 const Home = () => {
     const doctorData = useLoaderData();
 
-    console.log(doctorData)
     return (
         <div className='bg-gray-100'>
             <Banner></Banner>

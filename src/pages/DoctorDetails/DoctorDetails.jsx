@@ -3,18 +3,26 @@ import reg from '../../assets/fi_9394452.png';
 import { Link, useLoaderData } from 'react-router';
 import { useParams } from 'react-router';
 import { PiWarningOctagonThin } from "react-icons/pi";
+import { addToBookList } from '../../components/Utilities/_bookList';
+
+
+
+const handleStoredData = (id) =>{
+    addToBookList(id);
+}
+
 
 
 const DoctorDetails = () => {
-    const id = useParams();
-    const docId = parseInt(id.id);
+    const allId = useParams();
+    const docId = parseInt(allId.id);
 
     const doctorData = useLoaderData();
     const docInfo = doctorData.find(doc => doc.id === docId);
 
-    const { name, image, availability, registration_number, workplace, education, fee } = docInfo;
+    const {id, name, image, availability, registration_number, workplace, education, fee } = docInfo;
 
-    console.log(docInfo);
+
     return (
         <div className='text-black w-11/12 mx-auto my-5 '>
             <div className='text-center rounded-2xl bg-white p-6'>
@@ -53,8 +61,8 @@ const DoctorDetails = () => {
                 </div>
                 <p className='text-amber-500 flex items-center my-5'> <PiWarningOctagonThin size={35} /> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
             </div>
-            <Link to={''}>
-                <button className='text-xl font-semibold bg-blue-600 rounded-full text-white py-1 w-full mb-4'>Book Appointment Now</button>
+            <Link to={'/booking-data'}>
+                <button onClick={() => handleStoredData(id)} className='text-xl font-semibold bg-blue-600 rounded-full text-white py-1 w-full mb-4'>Book Appointment Now</button>
             </Link>
         </div>
     );
