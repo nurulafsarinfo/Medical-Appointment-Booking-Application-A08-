@@ -1,16 +1,9 @@
 import React from 'react';
 import reg from '../../assets/fi_9394452.png';
-import { Link, useLoaderData } from 'react-router';
+import { Link, useLoaderData, useNavigate } from 'react-router';
 import { useParams } from 'react-router';
 import { PiWarningOctagonThin } from "react-icons/pi";
-import { addToBookList } from '../../components/Utilities/_bookList';
-
-
-
-const handleStoredData = (docInfo) => {
-    addToBookList(docInfo);
-
-}
+import { addToBookList, getStoredBookedList } from '../../components/Utilities/_bookList';
 
 
 
@@ -19,10 +12,23 @@ const DoctorDetails = () => {
     const docId = parseInt(allId.id);
 
     const doctorData = useLoaderData();
+
+
     const docInfo = doctorData.find(doctr => doctr.id === docId);
 
     const { name, image, availability, registration_number, workplace, education, fee } = docInfo;
+    const navigate = useNavigate();
 
+    const handleStoredData = (docInfo) => {
+        const allBookedList = getStoredBookedList();
+        console.log("dovvvvvvvv----", docInfo)
+
+        if (!allBookedList.includes(docInfo.id)) {
+            navigate('/my-booking-data')
+        }
+        addToBookList(docInfo);
+
+    }
 
     return (
         <div className='text-black w-11/12 mx-auto my-5 '>
@@ -62,9 +68,9 @@ const DoctorDetails = () => {
                 </div>
                 <p className='text-amber-500 flex items-center my-5'> <PiWarningOctagonThin size={35} /> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
             </div>
-            <Link to={'/my-booking-data'}>
-                <button onClick={() => handleStoredData(docInfo)} className='text-xl font-semibold bg-blue-600 rounded-full text-white py-1 w-full mb-4'>Book Appointment Now</button>
-            </Link>
+
+            <button onClick={() => handleStoredData(docInfo)} className='text-xl font-semibold bg-blue-600 rounded-full text-white py-1 w-full mb-4'>Book Appointment Now</button>
+
 
         </div>
     );

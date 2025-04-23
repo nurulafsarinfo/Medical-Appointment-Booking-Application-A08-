@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/logo.png'
 import { NavLink } from 'react-router';
+import '../../index.css'
 
 const Navbar = () => {
     return (
@@ -11,12 +12,18 @@ const Navbar = () => {
                     <a className="ml-2 text-xl font-bold">DocTalk</a>
                 </div>
                 <div className="navbar-center  lg:flex">
-                    <ul className="menu menu-horizontal px-1 gap-6">
-                        <NavLink to='/home' className='font-semibold'>Home</NavLink>
-                        <NavLink to='/home' className='font-semibold'>Home2</NavLink>
-                        <NavLink to='/home' className='font-semibold'>Home3</NavLink>
-                        <NavLink to='/home' className='font-semibold'>Home4</NavLink>
+                    <ul className="flex justify-center my-5">
+                        <NavLink to='/home' className='font-semibold  py-2 w-26 text-center'>Home</NavLink>
+                        <NavLink to='/my-booking-data' className='font-semibold py-2 w-26 text-center'>Bookings</NavLink>
+                        <NavLink to='/blogs' className='font-semibold py-2 w-26 text-center'>Blogs</NavLink>
+                        <NavLink to='/contact' className='font-semibold py-2 w-26 text-center'>Contact</NavLink>
                     </ul>
+                    {/* <ul className="menu menu-horizontal px-1 flex justify-center gap-6">
+                        <NavLink to='/home' className='font-semibold '>Home</NavLink>
+                        <NavLink to='/my-booking-data' className='font-semibold'>Bookings</NavLink>
+                        <NavLink to='/blogs' className='font-semibold'>Blogs</NavLink>
+                        <NavLink to='/contact' className='font-semibold '>Contact</NavLink>
+                    </ul> */}
                 </div>
                 <div className="navbar-end">
                     <a className="btn rounded-full bg-blue-500 border-none">Emargency</a>

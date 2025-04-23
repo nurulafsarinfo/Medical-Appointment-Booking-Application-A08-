@@ -2,7 +2,7 @@ import React from 'react';
 
 const ErrorPage = () => {
     return (
-        <div>
+        <div className='w-full h-full bg-white text-black'>
             <h1>Sorry !</h1>
             <h3>Page not Found.</h3>
         </div>
