@@ -18,7 +18,7 @@ const DoctorDetails = () => {
     const docId = parseInt(allId.id);
 
     const doctorData = useLoaderData();
-    const docInfo = doctorData.find(doc => doc.id === docId);
+    const docInfo = doctorData.find(doctr => doctr.id === docId);
 
     const {id, name, image, availability, registration_number, workplace, education, fee } = docInfo;
 
