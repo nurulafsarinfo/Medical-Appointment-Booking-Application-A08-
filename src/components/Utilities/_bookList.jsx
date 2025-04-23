@@ -3,6 +3,7 @@ const getStoredBookedList = () =>{
 
     if(bookedList){
         const booked = JSON.parse(bookedList);
+        console.log("booked data :", booked)
         return booked;
     }
     else{
@@ -24,4 +25,12 @@ const addToBookList = (id) => {
     }
 }
 
-export { addToBookList };
+const removeBookList = (id) => {
+    const allBookedList = getStoredBookedList();
+
+    if(allBookedList.includes(id)){
+        localStorage.removeItem(id);
+    }
+}
+
+export { addToBookList, getStoredBookedList, removeBookList };
