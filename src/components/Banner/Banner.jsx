@@ -6,7 +6,7 @@ const Banner = () => {
 
     return (
         <div>
-             <div className=' flex flex-col items-center justify-center py-10  text-black bg-red-50 bg-gradient-to-r from-blue-100 to-purple-100 w-11/12 m-auto border-2 border-white rounded-2xl'>
+             <div className=' flex flex-col items-center justify-center py-10  text-black bg-gradient-to-r from-blue-100 to-purple-100 w-11/12 m-auto border-2 border-white rounded-2xl'>
                 <div className='px-30 flex flex-col items-center text-center mb-12'>
                     <h1 className='text-5xl font-bold'>Dependable Care, Backed by Trusted <br /> Professionals.</h1>
                     <br />

@@ -1,0 +1,192 @@
+[
+  {
+      "id": 1,
+      "image": "https://i.ibb.co.com/HfTM7BzV/download-1.jpg",
+      "name": "Dr. Ayesha Mehta",
+      "education": "MBBS, MD (Dermatology)",
+      "speciality": "Dermatologist",
+      "experience": "8+ years experience",
+      "registration_number": "DMC/78910/2016",
+      "designation": "Consultant Dermatologist",
+      "workplace": "SkinCare Clinic, Mumbai",
+      "available": true,
+      "fee": 800,
+      "availability": ["Monday", "Tuesday", "Thursday", "Friday"]
+  },
+  {
+   
+      "id": 2,
+      "image": "https://i.ibb.co.com/PGQvSmfS/download-4.jpg",
+      "name": "Dr. Rajesh Kumar",
+      "education": "MBBS, MS (Orthopedics)",
+      "speciality": "Orthopedic Surgeon",
+      "experience": "10+ years experience",
+      "registration_number": "MCI/11223/2013",
+      "designation": "Senior Orthopedic Consultant",
+      "workplace": "Bone & Joint Care Center, Delhi",
+      "available": true,
+      "fee": 1200,
+      "availability": ["Monday", "Tuesday", "Friday", "Saturday"]
+    
+  },
+  {
+   
+      "id": 3,
+      "image": "https://i.ibb.co.com/k21r49PW/download-2.jpg",
+      "name": "Dr. Neha Sharma",
+      "education": "MBBS, DGO",
+      "speciality": "Gynecologist",
+      "experience": "6+ years experience",
+      "registration_number": "MMC/45678/2018",
+      "designation": "Obstetrician & Gynecologist",
+      "workplace": "Motherhood Clinic, Pune",
+      "available": true,
+      "fee": 900,
+      "availability": ["Monday", "Wednesday", "Friday", "Saturday"]
+    
+  },
+  {
+   
+      "id": 4,
+      "image": "https://i.ibb.co.com/PZmtXGqL/download-5.jpg",
+      "name": "Dr. Imran Shaikh",
+      "education": "MBBS, MD (Pediatrics)",
+      "speciality": "Pediatrician",
+      "experience": "7+ years experience",
+      "registration_number": "MMC/33456/2017",
+      "designation": "Child Specialist",
+      "workplace": "Happy Kids Clinic, Bangalore",
+      "available": true,
+      "fee": 700,
+      "availability": ["Tuesday", "Thursday", "Saturday"]
+    
+  },
+  {
+   
+      "id": 5,
+      "image": "https://i.ibb.co.com/PzWFsCfz/download-3.jpg",
+      "name": "Dr. Priya Nair",
+      "education": "MBBS, DNB (Ophthalmology)",
+      "speciality": "Eye Specialist",
+      "experience": "9+ years experience",
+      "registration_number": "KMC/77889/2015",
+      "designation": "Consultant Ophthalmologist",
+      "workplace": "Vision Care Hospital, Kochi",
+      "available": false,
+      "fee": 650,
+      "availability": ["Monday", "Wednesday", "Friday"]
+    
+  },
+  {
+   
+      "id": 6,
+      "image": "https://i.ibb.co.com/qYT2z14j/download.jpg",
+      "name": "Dr. Arjun Patel",
+      "education": "MBBS, MD (General Medicine)",
+      "speciality": "General Physician",
+      "experience": "11+ years experience",
+      "registration_number": "GMC/12321/2012",
+      "designation": "Senior General Physician",
+      "workplace": "Healthy Life Clinic, Ahmedabad",
+      "available": true,
+      "fee": 500,
+      "availability": ["Monday","Wednesday", "Friday", "Saturday"]
+    
+  },
+  {
+   
+      "id": 7,
+      "image": "https://i.ibb.co.com/p65QrW4P/images-2.jpg",
+      "name": "Dr. Anjali Verma",
+      "education": "BDS, MDS (Orthodontics)",
+      "speciality": "Dentist",
+      "experience": "5+ years experience",
+      "registration_number": "DMC/99887/2019",
+      "designation": "Orthodontist",
+      "workplace": "Smile Dental Care, Jaipur",
+      "available": true,
+      "fee": 600,
+      "availability": ["Tuesday", "Thursday", "Saturday"]
+    
+  },
+  {
+   
+      "id": 8,
+      "image": "https://i.ibb.co.com/k2S01Xw5/images-1.jpg",
+      "name": "Dr. Karan Desai",
+      "education": "MBBS, DM (Neurology)",
+      "speciality": "Neurologist",
+      "experience": "9+ years experience",
+      "registration_number": "MMC/88110/2011",
+      "designation": "Senior Neurologist",
+      "workplace": "NeuroCare Center, Mumbai",
+      "available": false,
+      "fee": 1500,
+      "availability": ["Monday", "Tuesday", "Thursday"]
+    
+  },
+  {
+   
+      "id": 9,
+      "image": "https://i.ibb.co.com/hxC0WszZ/images-3.jpg",
+      "name": "Dr. Ritu Arora",
+      "education": "MBBS, MD (Psychiatry)",
+      "speciality": "Psychiatrist",
+      "experience": "10+ years experience",
+      "registration_number": "PMC/22100/2014",
+      "designation": "Consultant Psychiatrist",
+      "workplace": "Mind Wellness Clinic, Chandigarh",
+      "available": true,
+      "fee": 1000,
+      "availability": ["Wednesday", "Thursday", "Saturday"]
+    
+  },
+  {
+   
+      "id": 10,
+      "image": "https://i.ibb.co.com/s9Dqg9Vb/images-4.jpg",
+      "name": "Dr. Sandeep Rana",
+      "education": "MBBS, MS (ENT)",
+      "speciality": "ENT Specialist",
+      "experience": "9+ years experience",
+      "registration_number": "HMC/11334/2015",
+      "designation": "ENT Surgeon",
+      "workplace": "Ear Nose Throat Center, Gurgaon",
+      "available": true,
+      "fee": 850,
+      "availability": ["Monday", "Thursday", "Friday"]
+    
+  },
+  {
+   
+      "id": 11,
+      "image": "https://i.ibb.co.com/Mw1yMzX/images-5.jpg",
+      "name": "Dr. Meena Joshi",
+      "education": "MBBS, MD (Radiology)",
+      "speciality": "Radiologist",
+      "experience": "7+ years experience",
+      "registration_number": "RMC/55542/2012",
+      "designation": "Senior Radiologist",
+      "workplace": "Imaging & Diagnostics, Hyderabad",
+      "available": false,
+      "fee": 950,
+      "availability": ["Tuesday", "Wednesday", "Friday"]
+    
+  },
+  {
+   
+      "id": 12,
+      "image": "https://i.ibb.co.com/JFzhtNGH/images-6.jpg",
+      "name": "Dr. Vikram Singh",
+      "education": "MBBS, MS (Urology)",
+      "speciality": "Urologist",
+      "experience": "14+ years experience",
+      "registration_number": "SMC/66677/2010",
+      "designation": "Chief Urologist",
+      "workplace": "UroCare Hospital, Lucknow",
+      "available": true,
+      "fee": 1400,
+      "availability": ["Monday", "Wednesday", "Friday", "Saturday"]
+    
+  }
+]
