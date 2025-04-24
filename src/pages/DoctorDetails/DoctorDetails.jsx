@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import reg from '../../assets/fi_9394452.png';
-import { Link, useLoaderData, useNavigate } from 'react-router';
+import { useLoaderData, useNavigate } from 'react-router';
 import { useParams } from 'react-router';
 import { PiWarningOctagonThin } from "react-icons/pi";
 import { addToBookList, getStoredBookedList } from '../../components/Utilities/_bookList';
@@ -10,11 +10,21 @@ import { addToBookList, getStoredBookedList } from '../../components/Utilities/_
 const DoctorDetails = () => {
     const allId = useParams();
     const docId = parseInt(allId.id);
-
     const doctorData = useLoaderData();
+    // const [doctorData, setDoctorData] = useState([])
 
+    // console.log("daoctor dtaa ", doctorData)
+    // useEffect(() => {
+    //     fetch("/doctorInfo.json")
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             setDoctorData(data);
+
+    //         })
+    // },[])
 
     const docInfo = doctorData.find(doctr => doctr.id === docId);
+    console.log("docINfo: ", docInfo)
 
     const { name, image, availability, registration_number, workplace, education, fee } = docInfo;
     const navigate = useNavigate();
@@ -31,6 +41,7 @@ const DoctorDetails = () => {
     }
 
     return (
+
         <div className='text-black w-11/12 mx-auto my-5 '>
             <div className='text-center rounded-2xl bg-white p-6'>
                 <p className='text-3xl font-semibold mb-5 '>Doctor’s Profile Details</p>
@@ -47,7 +58,7 @@ const DoctorDetails = () => {
                     <div className='flex gap-3 mt-10'>
                         <p className='text-xl font-semiBold'>Availability</p>
                         {
-                            availability.map(day => <span className='ml-3 bg-amber-100 text-amber-600 border rounded-full px-4 py-1'>{day}</span>)
+                            availability.map((day, index) => <span key={index} className='ml-3 bg-amber-100 text-amber-600 border rounded-full px-4 py-1'>{day}</span>)
                         }
                     </div>
                     <div className='flex gap-2 my-10'>

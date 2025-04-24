@@ -1,5 +1,6 @@
 import React from 'react';
 import bannerImg from '../../assets/banner-img-1.png';
+import bannerImg2 from '../../assets/bannerDoctor.jpg';
 
 
 const Banner = () => {
@@ -19,7 +20,7 @@ const Banner = () => {
                 </div>
 
                 <div className='flex gap-3 w-full  justify-center bg-'>
-                    <img  src={bannerImg} alt="" className='w-[500px]' />
+                    <img  src={bannerImg2} alt="" className='w-[500px] rounded-2xl' />
                     <img src={bannerImg} alt="" className='w-[500px]'/>
                 </div>
             </div>
