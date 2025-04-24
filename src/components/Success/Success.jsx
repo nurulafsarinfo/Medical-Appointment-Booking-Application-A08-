@@ -77,11 +77,7 @@ const Success = () => {
                 </div>
             </div>
             
-            <div className="grid md:grid-cols-4 grid-cols-2 gap-5 justify-center items-center mt-16 lg:mx-40 md:mx-20 border">
-                            <div className="h-40 flex items-center justify-center bg-gray-500">Item 1</div>
-                            <div className="h-40 flex items-center justify-center bg-gray-600">Item 2</div>
-                           
-                        </div>
+
         </div>
     );
 };
