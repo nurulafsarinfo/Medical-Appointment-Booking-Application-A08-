@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home";
 import DoctorDetails from "../pages/DoctorDetails/DoctorDetails";
 import MyBooking from "../pages/MyBooking/MyBooking";
 import Blogs from "../pages/Blogs/Blogs";
+import ErrorLayout from "../components/ErrorLayout/ErrorLayout";
 
 
 
@@ -38,12 +39,18 @@ export const router = createBrowserRouter([
                 loader: () => fetch("/blogsData.json").then(res => res.json()),
                 Component: Blogs
             },
-            // {
-            //     path: '/contact',
-            //     Component: Error
-            // }
+        ]
+    },
 
-
+    {
+        path: '/',
+        element: <ErrorLayout></ErrorLayout>,
+        errorElement: <ErrorPage></ErrorPage>,
+        children: [
+            {
+                path: '*',
+                element: <ErrorPage></ErrorPage>
+            },
         ]
     },
 ])

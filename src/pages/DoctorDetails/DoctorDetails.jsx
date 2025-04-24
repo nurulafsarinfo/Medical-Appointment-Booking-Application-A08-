@@ -11,21 +11,9 @@ const DoctorDetails = () => {
     const allId = useParams();
     const docId = parseInt(allId.id);
     const doctorData = useLoaderData();
-    // const [doctorData, setDoctorData] = useState([])
-
-    // console.log("daoctor dtaa ", doctorData)
-    // useEffect(() => {
-    //     fetch("/doctorInfo.json")
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             setDoctorData(data);
-
-    //         })
-    // },[])
 
     const docInfo = doctorData.find(doctr => doctr.id === docId);
-    console.log("docINfo: ", docInfo)
-
+   
     const { name, image, availability, registration_number, workplace, education, fee } = docInfo;
     const navigate = useNavigate();
 
@@ -47,7 +35,7 @@ const DoctorDetails = () => {
                 <p className='text-3xl font-semibold mb-5 '>Doctor’s Profile Details</p>
                 <p>We are providing Experienced doctors. Who are very inteligence and Caring. Each doctor have machive foreign degree. They are very <br /> pleasue person.We suggest your needed things. Thank You.</p>
             </div>
-            <div className='flex items-center gap-6 rounded-2xl bg-white mt-10 p-10'>
+            <div className='flex md:flex-row flex-col items-center gap-6 rounded-2xl bg-white mt-10 p-10'>
                 <img src={image} alt="Doctor_image" className='border border-blue-300 rounded-2xl w-90 shadow-2xl' />
                 <div>
                     <p className='font-bold text-3xl '>{name}</p>
@@ -57,9 +45,11 @@ const DoctorDetails = () => {
                     <p className='text-gray-600 m flex gap-2  border-dashed border-y border-gray-300  py-3 '><img src={reg} alt="" />Rag No: {registration_number}</p>
                     <div className='flex gap-3 mt-10'>
                         <p className='text-xl font-semiBold'>Availability</p>
-                        {
-                            availability.map((day, index) => <span key={index} className='ml-3 bg-amber-100 text-amber-600 border rounded-full px-4 py-1'>{day}</span>)
-                        }
+                        <div className='flex flex-wrap gap-2'>
+                            {
+                                availability.map((day, index) => <span key={index} className='ml-3 bg-amber-100 text-amber-600 border rounded-full px-4 py-1'>{day}</span>)
+                            }
+                        </div>
                     </div>
                     <div className='flex gap-2 my-10'>
                         <p className='font-bold '>Consutation Fee: </p>
