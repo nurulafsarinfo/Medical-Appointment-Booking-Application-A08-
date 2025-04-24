@@ -15,13 +15,13 @@ const Banner = () => {
                 </div>
 
                 <div className='flex gap-4 text-center mb-10'> 
-                    <input className='border w-[400px] rounded-full px-7' type="text" placeholder='Search any doctor...' />
-                    <button className='text-2xl text-white font-semibold px-6 py-2 rounded-full bg-blue-600'>Search Now</button>
+                    <input className='border md:w-[400px] w-[200px] rounded-full px-7' type="text" placeholder='Search any doctor...' />
+                    <button className='md:text-2xl text-lg text-white font-semibold px-6 py-2 rounded-full bg-blue-600'>Search Now</button>
                 </div>
 
-                <div className='flex gap-3 w-full  justify-center bg-'>
-                    <img  src={bannerImg2} alt="" className='w-[500px] rounded-2xl' />
-                    <img src={bannerImg} alt="" className='w-[500px]'/>
+                <div className='md:flex gap-3 w-full  justify-center items-center'>
+                    <img  src={bannerImg2} alt="" className='lg:w-[500px] md:w-[400px]  rounded-2xl md:mb-0 mb-5' />
+                    <img src={bannerImg} alt="" className='lg:w-[500px] md:w-[400px]'/>
                 </div>
             </div>
         </div>

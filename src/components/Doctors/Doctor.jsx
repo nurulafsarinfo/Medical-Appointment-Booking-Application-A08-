@@ -7,7 +7,7 @@ const Doctor = ({ doctorinfo }) => {
 
     return (
         <div className='text-black w-96 bg-green-50 rounded-xl' >
-            <div className='border rounded-3xl p-8 flex flex-col gap-2'>
+            <div className=' border-blue-200 rounded-3xl p-8 flex flex-col gap-2 shadow-md'>
                 <img src={image} alt="" className='w-90 h-60 rounded-3xl mb-5' />
                 <div>
                     <button className={`${available ? 'text-green-500' : 'text-red-500 border-red-300 text-[13px]'} border border-green-300 rounded-full px-6 py-1 bg-green-100 font-semibold`}>{available ? 'Available' : 'Unavailable'}</button>

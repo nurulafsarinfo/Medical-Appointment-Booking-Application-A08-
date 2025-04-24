@@ -31,13 +31,14 @@ const addToBookList = (docInfo) => {
 }
 
 const removeBookList = (id) => {
+    console.log(id)
     const allBookedList = getStoredBookedList();
-    // alert("clickeed")
+
     const updatedBookedList = allBookedList.filter(bookedId => bookedId !== id);
     const updatedBookedListString = JSON.stringify(updatedBookedList);
 
     localStorage.setItem("allBook", updatedBookedListString);
-    console.log("all book lisssssst: ", allBookedList)
+
 
 
 }
