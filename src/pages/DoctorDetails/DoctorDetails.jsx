@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 import reg from '../../assets/fi_9394452.png';
 import { useLoaderData, useNavigate } from 'react-router';
 import { useParams } from 'react-router';

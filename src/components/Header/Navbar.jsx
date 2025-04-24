@@ -5,8 +5,8 @@ import '../../index.css'
 
 const Navbar = () => {
     return (
-        <div className='bg-gray-100'>
-            <div className="navbar  shadow-sm w-11/12 m-auto bg-gray-100 text-black">
+        <nav className='bg-gray-100 '>
+            <div className="navbar w-full shadow-sm  m-auto bg-gray-100 text-black px-15">
                 <div className="navbar-start">
                     <img className='w-10' src={logo} alt="" />
                     <a className="ml-2 text-xl font-bold">DocTalk</a>
@@ -18,18 +18,13 @@ const Navbar = () => {
                         <NavLink to='/blogs' className='font-semibold py-2 w-26 text-center'>Blogs</NavLink>
                         <NavLink to='/contact' className='font-semibold py-2 w-26 text-center'>Contact</NavLink>
                     </ul>
-                    {/* <ul className="menu menu-horizontal px-1 flex justify-center gap-6">
-                        <NavLink to='/home' className='font-semibold '>Home</NavLink>
-                        <NavLink to='/my-booking-data' className='font-semibold'>Bookings</NavLink>
-                        <NavLink to='/blogs' className='font-semibold'>Blogs</NavLink>
-                        <NavLink to='/contact' className='font-semibold '>Contact</NavLink>
-                    </ul> */}
+                
                 </div>
                 <div className="navbar-end">
                     <a className="btn rounded-full bg-blue-500 border-none">Emargency</a>
                 </div>
             </div>
-        </div>
+        </nav>
     );
 };
 

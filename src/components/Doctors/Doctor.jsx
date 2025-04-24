@@ -10,7 +10,7 @@ const Doctor = ({ doctorinfo }) => {
             <div className='border rounded-3xl p-8 flex flex-col gap-2'>
                 <img src={image} alt="" className='w-90 h-60 rounded-3xl mb-5' />
                 <div>
-                    <button className={`${available ? 'text-green-500' : 'text-red-500 border-red-300 text-[13px]'} border border-green-300 rounded-full px-6 py-1 bg-green-100 font-semibold`}>{available ? 'Available' : 'Not Available'}</button>
+                    <button className={`${available ? 'text-green-500' : 'text-red-500 border-red-300 text-[13px]'} border border-green-300 rounded-full px-6 py-1 bg-green-100 font-semibold`}>{available ? 'Available' : 'Unavailable'}</button>
                     <button className='border rounded-full px-4 py-1 ml-3 border-blue-300 bg-blue-100 text-blue-600'> {experience} </button>
                 </div>
                 <h2 className='text-2xl font-semibold'>{name}</h2>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+
 const EmptyBooking = () => {
     return (
         <div className='text-black text-center bg-white py-20 my-20 rounded-2xl'>
@@ -9,6 +10,7 @@ const EmptyBooking = () => {
             <Link to={'/home'}>
                 <button className='bg-blue-600 text-2xl font-semibold text-white px-10 py-1 rounded-full mt-8'>Book an Appointment</button>
             </Link>
+
         </div>
     );
 };
